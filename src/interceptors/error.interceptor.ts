@@ -38,7 +38,6 @@ export class ErrorInterceptor implements HttpInterceptor {
 
           default:
             this.handleDefaultError(errorObj);
-            break;
         }
 
         return Observable.throw(error)
