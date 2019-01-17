@@ -32,7 +32,7 @@ export class AuthService {
         email: this.jwtHelper.decodeToken(tok).sub
     };
     this.storage.setLocalUser(user);
-}
+  }
 
   logout() {
     this.storage.setLocalUser(null);
